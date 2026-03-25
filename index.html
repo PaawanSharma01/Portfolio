@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Student Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Source+Sans+3:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Intro Animation -->
+    <div class="intro-overlay">
+        <div class="intro-dot"></div>
+        <p class="intro-text">Welcome to my portfolio</p>
+        <h1 class="intro-name">Paawan Sharma</h1>
+    </div>
+
+    <!-- Animated Network Background -->
+    <canvas id="networkCanvas" class="network-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link"><span class="nav-icon"></span> Home</a>
+                <a href="#skills" class="nav-link"><span class="nav-icon"></span> Skills</a>
+                <a href="#projects" class="nav-link"><span class="nav-icon"></span> Projects</a>
+                <a href="#training" class="nav-link"><span class="nav-icon"></span> Training</a>
+                <a href="#certifications" class="nav-link"><span class="nav-icon"></span> Certifications</a>
+                <a href="#achievements" class="nav-link"><span class="nav-icon"></span> Achievements</a>
+                <a href="#cocurricular" class="nav-link"><span class="nav-icon"></span> Co-curricular</a>
+                <a href="#education" class="nav-link"><span class="nav-icon"></span> Education</a>
+                <a href="#about" class="nav-link"><span class="nav-icon"></span> About</a>
+                <a href="#contact" class="nav-link"><span class="nav-icon"></span> Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <p class="hero-greeting">Welcome to my portfolio</p>
+            <h1 class="hero-name">Paawan Sharma</h1>
+            <h2 class="hero-tagline">I like make to things more secure.</h2>
+            <p class="hero-description">
+                I'm a cyber student specializing in building (and occasionally designing) 
+                exceptional digital experiences. Currently focused on learning new technologies 
+                and building projects that make an impact.
+            </p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary">Check out my work</a>
+                <a href="https://github.com/PaawanSharma01/my-cv/blob/main/mycv.pdf" target="_blank" class="btn btn-secondary">Click to see my CV</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number"></span>
+                Skills & Technologies
+            </h2>
+            <div class="skills-content">
+                <div class="skills-list">
+                    <div class="skill-item">
+                        <span class="skill-name">C++</span>
+                        <div class="skill-bar"><div class="skill-progress" data-width="80"></div></div>
+                        <span class="skill-level">80%</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">C</span>
+                        <div class="skill-bar"><div class="skill-progress" data-width="80"></div></div>
+                        <span class="skill-level">80%</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Python</span>
+                        <div class="skill-bar"><div class="skill-progress" data-width="50"></div></div>
+                        <span class="skill-level">50%</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">nmap</span>
+                        <div class="skill-bar"><div class="skill-progress" data-width="60"></div></div>
+                        <span class="skill-level">60%</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Burpsuite</span>
+                        <div class="skill-bar"><div class="skill-progress" data-width="60"></div></div>
+                        <span class="skill-level">60%</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Wireshark</span>
+                        <div class="skill-bar"><div class="skill-progress" data-width="60"></div></div>
+                        <span class="skill-level">60%</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Kali Linux</span>
+                        <div class="skill-bar"><div class="skill-progress" data-width="70"></div></div>
+                        <span class="skill-level">70%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number"></span>
+                Projects
+            </h2>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-header">
+                        <span class="project-folder">📁</span>
+                        <div class="project-links">
+                            <a href="https://github.com/PaawanSharma01/password-checker-using-c-" target="_blank" aria-label="GitHub">
+                                <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Password Checker using C++</h3>
+                    <p class="project-description">A C++ application that checks password strength and validates against common security criteria. Helps users create more secure passwords.</p>
+                    <div class="project-tech">
+                        <span>C++</span>
+                        <span>Security</span>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-header">
+                        <span class="project-folder">📁</span>
+                        <div class="project-links">
+                            <a href="https://github.com/PaawanSharma01/Password-cracker" target="_blank" aria-label="GitHub">
+                                <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Password Cracker</h3>
+                    <p class="project-description">A password cracking tool that demonstrates various password attack techniques for educational purposes in cybersecurity.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Security</span>
+                        <span>Cryptography</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Training Section -->
+    <section id="training" class="section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number"></span>
+                Training
+            </h2>
+            <div class="training-grid">
+                <div class="training-card">
+                    <span class="training-status">Completed</span>
+                    <h3 class="training-title">DSA with C++</h3>
+                    <span class="training-provider">Cypher School</span>
+                    <p class="training-description">Data Structures and Algorithms using C++ programming language. Covers arrays, linked lists, trees, graphs, and sorting algorithms.</p>
+                </div>
+                <div class="training-card">
+                    <span class="training-status">In Progress</span>
+                    <h3 class="training-title">Diploma in CEH</h3>
+                    <span class="training-provider">Cyberous</span>
+                    <p class="training-description">Certified Ethical Hacker diploma program covering ethical hacking methodologies, penetration testing, and cybersecurity fundamentals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number"></span>
+                Certifications
+            </h2>
+            <div class="cert-grid">
+                <a href="https://www.linkedin.com/posts/paawansharma_peer-to-peer-protocols-and-local-area-networks-activity-7399625637205835776-hZx9?utm_source=share&utm_medium=member_desktop&rcm=ACoAAETQH3kBJ-T6kxTSJZD7cRzplEKTL7SFr8U" target="_blank" class="cert-card">
+                    <div class="cert-icon">🎓</div>
+                    <div class="cert-content">
+                        <h3 class="cert-title">Peer to Peer Protocols and Local Area Network</h3>
+                        <span class="cert-issuer">LinkedIn</span>
+                        <span class="cert-date">2025</span>
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/posts/paawansharma_certificate-on-tcpip-and-advanced-topics-activity-7399624716140994561-5qfN?utm_source=share&utm_medium=member_desktop&rcm=ACoAAETQH3kBJ-T6kxTSJZD7cRzplEKTL7SFr8U" target="_blank" class="cert-card">
+                    <div class="cert-icon">🎓</div>
+                    <div class="cert-content">
+                        <h3 class="cert-title">TCP/IP and Advanced Topics</h3>
+                        <span class="cert-issuer">LinkedIn</span>
+                        <span class="cert-date">2025</span>
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/posts/paawansharma_got-certificate-for-fundamentals-of-network-activity-7399623956904857600-0n_C?utm_source=share&utm_medium=member_desktop&rcm=ACoAAETQH3kBJ-T6kxTSJZD7cRzplEKTL7SFr8U" target="_blank" class="cert-card">
+                    <div class="cert-icon">🎓</div>
+                    <div class="cert-content">
+                        <h3 class="cert-title">Fundamentals of Network Communication</h3>
+                        <span class="cert-issuer">LinkedIn</span>
+                        <span class="cert-date">2025</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number"></span>
+                Achievements
+            </h2>
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <span class="achievement-icon">⭐</span>
+                    <h3 class="achievement-title">4 Star in C</h3>
+                    <span class="achievement-event">HackerRank</span>
+                    <p class="achievement-description">Achieved 4-star rating in C programming on HackerRank platform.</p>
+                </div>
+                <div class="achievement-card">
+                    <span class="achievement-icon">⭐</span>
+                    <h3 class="achievement-title">4 Star in C++</h3>
+                    <span class="achievement-event">HackerRank</span>
+                    <p class="achievement-description">Achieved 4-star rating in C++ programming on HackerRank platform.</p>
+                </div>
+                <div class="achievement-card">
+                    <span class="achievement-icon">🏸</span>
+                    <h3 class="achievement-title">District Level Player</h3>
+                    <span class="achievement-event">Badminton</span>
+                    <p class="achievement-description">Represented at district level in badminton competition.</p>
+                </div>
+                <div class="achievement-card">
+                    <span class="achievement-icon">🥉</span>
+                    <h3 class="achievement-title">District 3rd Rank</h3>
+                    <span class="achievement-event">IMO (International Mathematical Olympiad)</span>
+                    <p class="achievement-description">Secured 3rd rank at district level in IMO.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Co-curricular Activities Section -->
+    <section id="cocurricular" class="section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number"></span>
+                Co-curricular Activities
+            </h2>
+            <div class="activities-grid">
+                <div class="activity-card">
+                    <span class="activity-icon">✍️</span>
+                    <h3 class="activity-title">Writing</h3>
+                    <p class="activity-description">Writing poems and shayari</p>
+                </div>
+                <div class="activity-card">
+                    <span class="activity-icon">🎵</span>
+                    <h3 class="activity-title">Listening to Music</h3>
+                    <p class="activity-description">Enjoying various genres of music</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number"></span>
+                Education
+            </h2>
+            <div class="education-list">
+                <div class="education-card">
+                    <div class="education-header">
+                        <h3 class="education-degree">Bachelor of Technology in Computer Science</h3>
+                        <span class="education-cgpa">CGPA: 6.35/10</span>
+                    </div>
+                    <span class="education-institution">Lovely Professional University</span>
+                    <span class="education-year">2023 - 2027</span>
+                    <p class="education-courses">Relevant Courses: Data Structures, Algorithms, Database Systems, Web Development, Machine Learning</p>
+                </div>
+                <div class="education-card">
+                    <div class="education-header">
+                        <h3 class="education-degree">High School</h3>
+                        <span class="education-cgpa">Percentage: 71.4%</span>
+                    </div>
+                    <span class="education-institution">GSSS Neerpur</span>
+                    <span class="education-year">2020 - 2022</span>
+                    <p class="education-courses">Stream: Science (Computer Science, Physics, Mathematics)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number"></span>
+                About Me
+            </h2>
+            <div class="about-content">
+                <p>
+                    Hey, I'm a Cyber Security student currently pursuing my B.Tech, with a strong interest in understanding how digital systems work — and how to secure them.
+                </p>
+                <p>
+                    I'm passionate about ethical hacking, network security, and exploring vulnerabilities before others can exploit them. I enjoy learning by doing, whether it's testing systems, solving challenges, or diving into new security concepts.
+                </p>
+                <p>
+                    As I grow in this field, my goal is to become a skilled cybersecurity professional who can help build safer and more secure digital spaces.
+                </p>
+                <p class="about-contact">
+                    Feel free to contact me at: <a href="mailto:paawan2304@gmail.com">paawan2304@gmail.com</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number"></span>
+                Get In Touch
+            </h2>
+            <p class="contact-intro">
+                I'm currently looking for new opportunities. Whether you have a question 
+                or just want to say hi, I'll try my best to get back to you!
+            </p>
+            <div class="contact-grid">
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+                <div class="social-section">
+                    <p class="social-text">Or find me on:</p>
+                    <div class="social-links">
+                        <a href="https://github.com/PaawanSharma01" target="_blank" aria-label="GitHub" class="social-link">
+                            <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+                            <span class="social-label">GitHub</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/paawansharma/" target="_blank" aria-label="LinkedIn" class="social-link">
+                            <svg viewBox="0 0 16 16" fill="currentColor"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-2.133-10.847a2.126 2.126 0 110 4.253 2.126 2.126 0 010-4.253zm0 5.838a3.713 3.713 0 100-7.425 3.713 3.713 0 000 7.425z"/></svg>
+                            <span class="social-label">LinkedIn</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Designed & Built by Paawan Sharma</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Intro Animation Handler
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                var introDot = document.querySelector('.intro-dot');
+                var introText = document.querySelector('.intro-text');
+                var introName = document.querySelector('.intro-name');
+                var introOverlay = document.querySelector('.intro-overlay');
+                
+                // When dot animation completes (2s), fade out overlay
+                setTimeout(function() {
+                    if (introOverlay) {
+                        introOverlay.style.opacity = '0';
+                        introOverlay.style.transition = 'opacity 0.5s ease';
+                        setTimeout(function() {
+                            introOverlay.style.display = 'none';
+                        }, 500);
+                    }
+                }, 2500);
+            }, 100);
+        });
+    </script>
+</body>
+</html>
